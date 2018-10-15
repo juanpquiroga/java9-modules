@@ -1,0 +1,8 @@
+jlink --module-path $JAVA_HOME\mods;out\production --add-modules academy.learnprogramming.jokeapp,academy.learnprogramming.jokeserver,academy.learnprogramming.jokeserver.kid,academy.learnprogramming.jokeserver.programmer --compress 2 --no-header-files --no-man-pages --strip-debug --output jre
+
+cd jre\bin\
+java -m academy.learnprogramming.jokeapp/academy.learnprogramming.jokeapp.Main
+
+jlink --module-path $JAVA_HOME\mods;out\production --add-modules academy.learningprograming.jokeapp.ui,academy.learnprogramming.jokeserver,academy.learnprogramming.jokeserver.kid,academy.learnprogramming.jokeserver.programmer --compress 2 --no-header-files --no-man-pages --strip-debug --output jreui
+cd jreui\bin\
+java -m academy.learningprograming.jokeapp.ui/academy.learningprogramming.jokeapp.ui.Main
